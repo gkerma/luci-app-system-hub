@@ -16,7 +16,7 @@ PKG_MAINTAINER:=Gandalf <contact@cybermind.fr>
 
 LUCI_TITLE:=LuCI System Hub Dashboard
 LUCI_DESCRIPTION:=Central control dashboard with component monitoring, health reports, remote assistance (RustDesk), diagnostics collection, and unified logging
-LUCI_DEPENDS:=+luci-base +luci-lib-jsonc +rpcd +rpcd-mod-luci +luci-lib-nixio
+LUCI_DEPENDS:=+luci-base +luci-app-secubox +luci-lib-jsonc +rpcd +rpcd-mod-luci +luci-lib-nixio
 
 LUCI_PKGARCH:=all
 

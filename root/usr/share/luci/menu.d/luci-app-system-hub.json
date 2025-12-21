@@ -1,67 +1,42 @@
 {
-	"admin/system/system-hub": {
+	"admin/secubox/system/system-hub": {
 		"title": "System Hub",
-		"order": 5,
+		"order": 10,
 		"action": {
-			"type": "firstchild",
-			"recurse": true
+			"type": "firstchild"
 		},
 		"depends": {
-			"acl": [ "luci-app-system-hub" ],
-			"uci": { "system-hub": true }
+			"acl": ["luci-app-system-hub"],
+			"uci": {"system_hub": true}
 		}
 	},
-	"admin/system/system-hub/overview": {
+	"admin/secubox/system/system-hub/overview": {
 		"title": "Overview",
-		"order": 1,
+		"order": 10,
 		"action": {
 			"type": "view",
 			"path": "system-hub/overview"
 		}
 	},
-	"admin/system/system-hub/components": {
-		"title": "Composants",
-		"order": 2,
-		"action": {
-			"type": "view",
-			"path": "system-hub/components"
-		}
-	},
-	"admin/system/system-hub/health": {
-		"title": "Santé",
-		"order": 3,
+	"admin/secubox/system/system-hub/health": {
+		"title": "Health",
+		"order": 20,
 		"action": {
 			"type": "view",
 			"path": "system-hub/health"
 		}
 	},
-	"admin/system/system-hub/remote": {
-		"title": "Assistance",
-		"order": 4,
+	"admin/secubox/system/system-hub/remote": {
+		"title": "Remote Access",
+		"order": 30,
 		"action": {
 			"type": "view",
 			"path": "system-hub/remote"
 		}
 	},
-	"admin/system/system-hub/diagnostics": {
-		"title": "Diagnostics",
-		"order": 5,
-		"action": {
-			"type": "view",
-			"path": "system-hub/diagnostics"
-		}
-	},
-	"admin/system/system-hub/logs": {
-		"title": "Logs",
-		"order": 6,
-		"action": {
-			"type": "view",
-			"path": "system-hub/logs"
-		}
-	},
-	"admin/system/system-hub/settings": {
-		"title": "Paramètres",
-		"order": 7,
+	"admin/secubox/system/system-hub/settings": {
+		"title": "Settings",
+		"order": 90,
 		"action": {
 			"type": "view",
 			"path": "system-hub/settings"
