@@ -6,29 +6,68 @@
 			"type": "firstchild"
 		},
 		"depends": {
-			"acl": ["luci-app-system-hub"],
-			"uci": {"system_hub": true}
+			"acl": ["luci-app-system-hub"]
 		}
 	},
 	"admin/secubox/system/system-hub/overview": {
 		"title": "Overview",
-		"order": 10,
+		"order": 1,
 		"action": {
 			"type": "view",
 			"path": "system-hub/overview"
 		}
 	},
+	"admin/secubox/system/system-hub/services": {
+		"title": "Services",
+		"order": 2,
+		"action": {
+			"type": "view",
+			"path": "system-hub/services"
+		}
+	},
+	"admin/secubox/system/system-hub/logs": {
+		"title": "System Logs",
+		"order": 3,
+		"action": {
+			"type": "view",
+			"path": "system-hub/logs"
+		}
+	},
+	"admin/secubox/system/system-hub/backup": {
+		"title": "Backup & Restore",
+		"order": 4,
+		"action": {
+			"type": "view",
+			"path": "system-hub/backup"
+		}
+	},
+	"admin/secubox/system/system-hub/components": {
+		"title": "Components",
+		"order": 5,
+		"action": {
+			"type": "view",
+			"path": "system-hub/components"
+		}
+	},
+	"admin/secubox/system/system-hub/diagnostics": {
+		"title": "Diagnostics",
+		"order": 6,
+		"action": {
+			"type": "view",
+			"path": "system-hub/diagnostics"
+		}
+	},
 	"admin/secubox/system/system-hub/health": {
-		"title": "Health",
-		"order": 20,
+		"title": "System Health",
+		"order": 7,
 		"action": {
 			"type": "view",
 			"path": "system-hub/health"
 		}
 	},
 	"admin/secubox/system/system-hub/remote": {
-		"title": "Remote Access",
-		"order": 30,
+		"title": "Remote Management",
+		"order": 8,
 		"action": {
 			"type": "view",
 			"path": "system-hub/remote"
@@ -36,7 +75,7 @@
 	},
 	"admin/secubox/system/system-hub/settings": {
 		"title": "Settings",
-		"order": 90,
+		"order": 9,
 		"action": {
 			"type": "view",
 			"path": "system-hub/settings"
